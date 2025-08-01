@@ -117,7 +117,7 @@ jobs:
   # This is the new simple job you requested
   new-simple-job:
     # It runs on the same type of runner as the build job
-    runs-on: tenki-local-ubuntu-22.04-medium-2c-8g
+    runs-on: ubuntu-latest
 
     # It has its own set of steps
     steps:
