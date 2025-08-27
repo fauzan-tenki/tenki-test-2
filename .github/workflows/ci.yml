@@ -54,15 +54,15 @@ jobs:
     steps:
       - name: Run a simple command
         run: echo "This is the new simple job. It runs in parallel with the 'build' job."
+        
+  always-fail-job:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print starting message
+        run: echo "This job will intentionally fail."
 
-  # always-fail-job:
-  #   needs: build
-  #   runs-on: ubuntu-latest
-  #   steps:
-  #     - name: Print starting message
-  #       run: echo "This job will intentionally fail."
-
-  #     - name: Force failure
-  #       run: |
-  #         echo "Simulating a failure..."
-  #         exit 1
+      - name: Force failure
+        run: |
+          echo "Simulating a failure..."
+          exit 1
