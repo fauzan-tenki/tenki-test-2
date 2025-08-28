@@ -49,11 +49,11 @@ jobs:
           echo "🎉 Build and test workflow completed successfully!"
           echo "Add specific build and test commands for your project type."
 
-  new-simple-job:
-    runs-on: tenki-local-ubuntu-22.04-small-1c-4g
-    steps:
-      - name: Run a simple command
-        run: echo "This is the new simple job. It runs in parallel with the 'build' job."
+  # new-simple-job:
+  #   runs-on: tenki-local-ubuntu-22.04-small-1c-4g
+  #   steps:
+  #     - name: Run a simple command
+  #       run: echo "This is the new simple job. It runs in parallel with the 'build' job."
         
   always-fail-job:
     needs: build
