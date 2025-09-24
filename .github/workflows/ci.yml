@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: tenki-local-ubuntu-22.04-medium-2c-8g
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
 
@@ -49,7 +49,7 @@ jobs:
           echo "Add specific build and test commands for your project type."
 
   new-simple-job:
-    runs-on: tenki-local-ubuntu-22.04-large-4c-16g
+    runs-on: ubuntu-latest
     steps:
       - name: Run a simple command
         run: echo "This is the new simple job. It runs in parallel with the 'build' job."
