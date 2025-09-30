@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 jobs:
   build:
-    runs-on: tenki-local-ubuntu-22.04-large-4c-16g
+    runs-on: tenki-local-ubuntu-22.04-medium-2c-8g
     steps:
       - uses: actions/checkout@v4
 
